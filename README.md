@@ -1,9 +1,8 @@
 # Rabbit-Label
 
 ## Demo
-<p align="center">
-  ![](assets/demo.gif)
-</p>
+![](assets/demo.gif)
+
 
 ## Dependence
 
