@@ -33,7 +33,9 @@ build html struct
 
 if you want label active always use data-active="active"
 ```html
-<input type="date" class="rabbit-field" data-active="active">
+<div class="rabbit-wrapper">
+    <input type="date" class="rabbit-field" data-label-text="Birth" data-active="active">
+</div>
 ```
 
 create rabbit label 
