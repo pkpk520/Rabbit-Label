@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ZH-TW">
+<head>
+    <link type="text/css" rel="stylesheet" charset="UTF-8" href="../rabbitlabel.css">
+</head>
+<body>
+    <div style="width:30%; margin: 0 auto;">
+            <div class="rabbit-wrapper">
+                <input type="text" class="rabbit-field" data-label-text="General Test">
+            </div>
+            <div class="rabbit-wrapper">
+                <input type="text" class="rabbit-field" data-label-text="required Test" required="required">
+            </div>
+            <div class="rabbit-wrapper">
+                <input type="date" class="rabbit-field" data-label-text="Date Test" required="" data-active="active">
+            </div>
+            <div class="rabbit-wrapper">
+                <input type="text" class="rabbit-field" data-label-text="Default Test" value="default value">
+            </div>
+            <button>取消</button>
+            <button style="float:right">提交</button>
+        
+    <div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../rabbitlabel.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".rabbit-wrapper").rabbitLabel();
+            $(".rabbit-wrapper").rabbitCheck();
+        })
+
+        $(window).on('pageshow', function() {
+            $(".rabbit-wrapper").rabbitCheck()
+        })
+    </script>
+</body>
+</html>

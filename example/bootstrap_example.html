@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" charset="UTF-8" href="../rabbitlabel.css">
+</head>
+<body class="container">
+
+    <div class="row justify-content-center">
+        <div class="col-lg-6">
+   
+            <div class="rabbit-wrapper">
+                <input type="text" class="form-control rabbit-field" data-label-text="General Test">
+            </div>
+            <div class="rabbit-wrapper">
+                <input type="text" class="form-control rabbit-field" data-label-text="required Test" required="required">
+            </div>
+            <div class="rabbit-wrapper">
+                <input type="date" class="form-control rabbit-field" data-label-text="Date Test" required="" data-active="active">
+            </div>
+            <div class="rabbit-wrapper">
+                <input type="text" class="form-control rabbit-field" data-label-text="Default Test" value="default value">
+            </div>
+
+            <div class="row justify-content-between no-gutters">
+                <button class="btn btn-danger">取消</button>
+                <button class="btn btn-primary">提交</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../rabbitlabel.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".rabbit-wrapper").rabbitLabel();
+            $(".rabbit-wrapper").rabbitCheck();
+        })
+        
+        $(window).on('pageshow', function() {
+            $(".rabbit-wrapper").rabbitCheck()
+        })
+    </script>
+</body>
+</html>

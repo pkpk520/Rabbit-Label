@@ -1,0 +1,62 @@
+.rabbit-wrapper,
+.rabbit-field,
+.rabbit-label {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.rabbit-wrapper {
+    position: relative;
+    line-height: 1;
+    line-height: 1.1;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+.rabbit-field {
+    display: block;
+    width: 100%;
+    height: 38px;
+    padding: 6px 12px;
+    font-size: 1rem;
+    line-height: 24px;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.rabbit-field:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.rabbit-required {
+    color: red;
+}
+
+.rabbit-label {
+    margin: 0;
+    padding: 6px 12px;
+    color: gray;
+    transition: all .3s ease;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: normal;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.rabbit-label.active {
+    top: -24px;
+    padding: 0;
+    font-size: 12px;
+}
