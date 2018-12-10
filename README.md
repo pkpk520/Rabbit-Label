@@ -31,6 +31,11 @@ build html struct
 </div>
 ```
 
+if you want label active always use data-active="active"
+```html
+<input type="date" class="rabbit-field" data-active="active">
+```
+
 create rabbit label 
 ```js
 $(document).ready(function(){
