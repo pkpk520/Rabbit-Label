@@ -27,24 +27,24 @@ build html struct
 ```
 
 create rabbit label 
-```html
+```js
 $(document).ready(function(){
     $(".rabbit-wrapper").rabbitLabel();
 })
 ```
 
 recheck label  
-```html
+```js
 $(".rabbit-wrapper").rabbitCheck();
 ```
 
 remove label 
-```html
+```js
 $(".rabbit-wrapper").rabbitRemove();
 ```
 
 if you have default value in input, you need recheck after create label
-```html
+```js
 $(document).ready(function(){
     $(".rabbit-wrapper").rabbitLabel();
     $(".rabbit-wrapper").rabbitCheck();
@@ -52,7 +52,7 @@ $(document).ready(function(){
 ```
 
 if you don't want it work failed when "prev page", you need add recheck in pageshow event 
-```html
+```js
 $(window).on('pageshow', function() {
     $(".rabbit-wrapper").rabbitCheck()
 })
