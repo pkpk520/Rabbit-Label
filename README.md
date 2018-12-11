@@ -31,7 +31,7 @@ build html struct
 </div>
 ```
 
-if you want label active always use data-active="active"
+if you want label always active, use data-active="active"
 ```html
 <div class="rabbit-wrapper">
     <input type="date" class="rabbit-field" data-label-text="Birth" data-active="active">
